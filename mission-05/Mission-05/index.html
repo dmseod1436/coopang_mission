@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>내비게이션 및 푸터 - 쿠팡(Coupang)</title>
-  <link rel="icon" href="/assets/favicon/favicon.png" />
+  <link rel="icon" href="./assets/favicon/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="module" src="./js/main.js"></script>
-  </head>
-
-  <body>
-    <header class="header">
-      <!-- 헤더 영역 -->
-      <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
-      <h1 class="sr-only">Coupang</h1>
-      <div class="header__inner">
-        <!-- 카테고리 버튼은 .header__inner 영역 안에 마크업 해주세요. -->
-
+</head>
+<body>
+  <header class="header">
+    <!-- 헤더 영역 -->
+    <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
+    <h1 class="sr-only">Coupang</h1>
+    <div class="header__inner">
+      <button class="button--category">
+        <img src="./assets/icon/hamburger.svg" alt="카테고리">카테고리
+      </button>
+    </div>
+  </header>
+  <nav class="navigation"> <!--버튼에 마우스가 올라가면 여기가 보임-->
+    <!-- 내비게이션 영역 -->
+    <!-- 내비게이션 제목 -->
+    <div class="navigation__inner">
+      <!-- 카테고리별 내비게이션(메뉴) 영역 -->
+      <ul class="navigation__list">
+        <ul id="firstBox">
+          <a class="choiceLink link" role="button"><i class="icon-clothes"></i>패션의류/잡화</a>
+          <ul class="secondBox">
+            <ul>
+              <a class="choiceLink link margin5px" role="button">여성패션</a>
+              <ul class="thirdBox">
+                <ul>
+                  <a class="link thirdLink margin5px" href="/">의류</a>
+                  <a class="link thirdLink margin5px" href="/">속옷/잠옷</a>
+                  <a class="link thirdLink margin5px" href="/">신발</a>
+                </ul>
+              </ul>
+              <a class="link margin5px" role="button">남성패션</a>
+              <a class="link margin5px" role="button">유아동패션</a>
+            </ul>
+          </ul>
+          <a class="link" role="button"><i class="icon-beauty"></i>뷰티</a>
+          <a class="link" role="button"><i class="icon-baby"></i>출산유아동</a>
+          <a class="link" role="button"><i class="icon-foods"></i>식품</a>
+          <a class="link" role="button"><i class="icon-kitchenware"></i>주방용품</a>
+          <a class="link" role="button"><i class="icon-houseware"></i>생활용품</a>
+          <a class="link" role="button"><i class="icon-interior"></i>홈인테리어</a>
+          <a class="link" role="button"><i class="icon-appliances"></i>가전디지털</a>
+          <a class="link" role="button"><i class="icon-sports"></i>스포츠</a>
+          <a class="link" role="button"><i class="icon-car"></i>자동차용품</a>
+          <a class="link" role="button"><i class="icon-book"></i>도서음반</a>
+          <a class="link" role="button"><i class="icon-toy"></i>완구취미</a>
+          <a class="link" role="button"><i class="icon-stationery"></i>문구오피스</a>
+          <a class="link" role="button"><i class="icon-pet"></i>반려동물</a>
+          <a class="link" role="button"><i class="icon-travel"></i>여행티켓</a>
+          <a class="link" role="button"><i class="icon-theme"></i>테마관 <img src="./assets/icon/new.svg" alt="new"></a>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  <main class="main">
+    <!-- 메인 콘텐츠 영역 -->
+    <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
+  </main>
+  <footer class="footer">
+    <!-- 푸터 영역 -->
+    <div class="topBox">
+      <div class="topBoxMain">
+        인재채용<span class="divider" aria-hidden="true">|</span>입점/제휴문의<span class="divider"
+          aria-hidden="true">|</span>공지사항<span class="divider" aria-hidden="true">|</span>고객의소리<span class="divider"
+          aria-hidden="true">|</span><b class="bold">개인정보 처리방침</b><span class="divider" aria-hidden="true">|</span>쿠팡페이
+        이용약관<span class="divider" aria-hidden="true">|</span><b class="bold">쿠팡페이 개인정보
+          처리방침</b><span class="divider" aria-hidden="true">|</span>신뢰관리센터<span class="divider"
+          aria-hidden="true">|</span>제휴마케팅<span class="divider" aria-hidden="true">|</span>광고안내
       </div>
-    </header>
-
-    <nav class="navigation">
-      <!-- 내비게이션 영역 -->
-      <!-- 내비게이션 제목 -->
-
-      <div class="navigation__inner">
-        <!-- 카테고리별 내비게이션(메뉴) 영역 -->
-
+    </div>
+    <div class="middleBox">
+      <div class="middleBoxMain">
+        <div class="logoBox"></div>
+        <div class="informationBox1">
+          <span>상호명 및 호스팅 서비스 제공 : 쿠팡(주)</span>
+          <span>대표이사 : 강한승, 박대준</span>
+          <span>서울시 송파구 송파대로 570</span>
+          <span>사업자 등록번호 : 120-88-00767</span>
+          <span>통신판매업신고 : 2017-서울송파-0680</span>
+        </div>
+        <div class="informationBox2">
+          <span class="flex"><b class="bold">365고객센터</b><span class="infoDivider">|</span>전자금융거래분쟁처리담당</span>
+          <a class="phone" href="tel:1577-7011">1577-7011</a>
+          <span>서울시 송파구 송파대로 570</span>
+          <a href="mailto:help@coupang.com">email : help@coupang.com</a>
+        </div>
+        <div class="guideBox">
+          <b class="bold">우리은행 채무지급보증 안내</b>
+          <span class="guideBoxMent">당사는 고객님이 현금 결제한 금액에 대해
+            우리은행과 채무지급보증 계약을 체결하여
+            안전거래를 보장하고 있습니다.</span>
+        </div>
       </div>
-    </nav>
-
-    <main class="main">
-      <!-- 메인 콘텐츠 영역 -->
-      <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
-    </main>
-
-    <footer class="footer">
-      <!-- 푸터 영역 -->
-      <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
-      
-    </footer>
-  </body>
-
+    </div>
+    <div class="bottomBox">
+      <div class="bottomBoxMain">
+        <div class="bottomBoxMainLeft">
+          사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+          마켓플레이스(오픈마켓) 상품의 경우 쿠팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다.
+          쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.
+          쿠팡은 소비자 보호와 안전거래를 위해 신뢰관리센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이 발생할 경우 별도의 분쟁처리절차에 의거 분쟁이 처리됩니다.
+          Copyright ⓒ Coupang Corp. 2010-2020 All Right Reserved.
+        </div>
+        <div class="bottomBoxMainRight">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+              src="./assets/icon/sns-facebook.svg" alt="페이스북"></a>
+          <a href="https://section.blog.naver.com/BlogHome.naver" target="_blank" rel="noopener noreferrer"><img
+              src="./assets/icon/sns-naver-blog.svg" alt="네이버 블로그"></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="instargram"
+              src="./assets/icon/sns-instagram.svg" alt="인스타그램"></a>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </footer>
+</body>
 </html>

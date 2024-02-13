@@ -1,22 +1,274 @@
 /* ---------------------------------------------- */
 /* 헤더                                            */
+.header {
+  width: 100%;
+  height: 116px;
+  border-bottom: 1px solid var(--color-gray-500);
+  display: flex;
+  padding-left: 450px;
+}
+.header__inner {
+  width: 1020px;
+  height: 100%;
+}
+.button--category img {
+  margin-bottom: 12px;
+}
+.button--category:focus {
+  outline: none;
+  box-shadow: 0px 0px 1px 1px red;
+  border-radius: 5px;
+}
 /* ---------------------------------------------- */
 
 
 /* ---------------------------------------------- */
-/* 내비게이션                                        */
-/* ---------------------------------------------- */
+/* 내비게이션 */
+.navigation {
+  width: 540px;
+  height: 500px;
+  margin-left: 450px;
+  box-shadow: 0px 4px 4px var(--color-gray-500);
+  position: relative;
+  background-image: none !important;
+  visibility: hidden;
+}
+#firstBox {
+  width: 180px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 12px;
+  background-image: none !important;
+}
+.choiceLink {
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.choiceLink:focus {
+  font-weight: 700 !important;
+  outline: 2px solid var(--color-blue-600);
+  color: var(--color-blue-600);
+  background-image: url('../../assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
 
+.choiceLink:hover {
+  font-weight: 700 !important;
+}
+
+.link {
+  width: 98%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 400 !important;
+  color: black
+}
+.secondBox {
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  font-weight: 400 !important;
+  background-image: none !important;
+}
+.secondBox::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  box-shadow: 2px 1px 1px 0px var(--color-gray-500);
+  position: absolute;
+  top: 0;
+}
+.thirdBox {
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  margin-left: 180px;
+  top: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-image: none !important;
+  visibility: hidden;
+}
+.thirdBox::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  box-shadow: 2px 1px 1px 0px var(--color-gray-500);
+  position: absolute;
+  top: 0;
+}
+.thirdLink:focus {
+  color: var(--color-blue-600) !important;
+  outline: none;
+  font-weight: 700;
+  text-decoration: underline var(--color-blue-600) !important;
+  font-weight: 700 !important;
+  outline: 2px solid var(--color-blue-600);
+}
+.thirdLink:hover {
+  color: var(--color-blue-600);
+  font-weight: 700;
+  text-decoration: underline var(--color-blue-600);
+}
+.margin5px {
+  margin-left: 5px;
+}
+.thirdLink {
+  width: 95%;
+}
+
+.is--active {
+  visibility: visible !important;
+  font-weight: 700 !important;
+  background-image: url('../../assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  color: var(--color-blue-600) !important;
+
+}
+/* ---------------------------------------------- */
+ 
 
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
 /* ---------------------------------------------- */
 /* 메인 콘텐츠 영역의 최소 높이 설정 */
-.main{
+.main {
   min-height: 52rem;
 }
 
 
 /* ---------------------------------------------- */
 /* 푸터                                            */
+.footer {
+  width: 100%;
+}
+.topBox {
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-gray-200);
+  display: flex;
+  justify-content: center;
+}
+.topBoxMain {
+  width: 1006px;
+  height: 100%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-gray-800);
+}
+.middleBox {
+  width: 1920px;
+  height: 207px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middleBoxMain {
+  width: 1200px;
+  height: 143px;
+  display: flex;
+  justify-content: space-between;
+}
+.logoBox {
+  width: 176px;
+  height: 40px;
+  background-image: url('../../assets/logo/logo-mono.svg');
+}
+.informationBox1,
+.informationBox2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  color: var(--color-gray-800);
+  font-size: 16px;
+  font-weight: 400;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoDivider {
+  margin: 0px 13px;
+}
+.phone {
+  font-weight: 700 !important;
+  font-size: 48px;
+}
+.guideBox {
+  color: var(--color-gray-800);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+}
+.guideBoxMent {
+  margin-top: 8px;
+  line-height: 19.2px;
+}
+.bottomBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 102px;
+  background-color: var(--color-gray-900);
+}
+.bottomBoxMain {
+  width: 1020px;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.bottomBoxMainLeft {
+  width: 848px;
+  height: 70px;
+  color: var(--color-gray-200);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18.4px;
+}
+.instargram {
+  background: linear-gradient(174.12deg, #285AEB 5.61%, #BC1888 22.32%, #CC2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+  border-radius: 50%;
+}
 /* ---------------------------------------------- */
+
+
+/* is--active 가 추가되어도 색이 바뀌면 안됨         */
+.button--category {
+  width: 110px;
+  height: 116px;
+  background-color: var(--color-blue-600);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  color: white !important;
+}
